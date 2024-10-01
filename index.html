@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.jpg" type="image/icon type">
+    <title>Calcultor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="mode-switch">
+            <label>
+                <input type="radio" name="angleMode" value="degrees" checked onclick="setMode('degrees')">
+                Degrees
+            </label>
+            <label>
+                <input type="radio" name="angleMode" value="radians" onclick="setMode('radians')">
+                Readians
+            </label>
+        </div>
+
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteChar()">DEL</button>
+            <button onclick="input('%')">%</button>
+            <button onclick="input('/')">/</button>
+
+            <button onclick="input('7')">7</button>
+            <button onclick="input('8')">8</button>
+            <button onclick="input('9')">9</button>
+            <button onclick="input('*')">*</button>
+
+            <button onclick="input('4')">4</button>
+            <button onclick="input('5')">5</button>
+            <button onclick="input('6')">6</button>
+            <button onclick="input('-')">-</button>
+
+            <button onclick="input('1')">1</button>
+            <button onclick="input('2')">2</button>
+            <button onclick="input('3')">3</button>
+            <button onclick="input('+')">+</button>
+
+            <button onclick="input('(')">(</button>
+            <button onclick="input(')')">)</button>
+            <button onclick="input('0')">0</button>
+            <button onclick="input('.')">.</button>
+
+            <button onclick="selectTrigFunc('sin')">sin</button>
+            <button onclick="selectTrigFunc('cos')">cos</button>
+            <button onclick="selectTrigFunc('tan')">tan</button>
+            <button onclick="input('Math.sqrt(')">√</button>
+            <button onclick="input('Math.log(')">log</button>
+            <button onclick="calculate()">=</button>
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
